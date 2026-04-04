@@ -2,4 +2,8 @@
     display:flex;
     justify-content: center;
     text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
