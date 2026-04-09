@@ -1,1 +1,1 @@
-const API = "/sdb/poly/wander";
+const url = "https://tinkr.tech/sdb/poly/wander";
