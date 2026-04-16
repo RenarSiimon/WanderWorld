@@ -29,4 +29,6 @@ button{
     margin-left: auto;
     border-radius:5px;
     cursor: pointer;
+    color: red;
+    font-family: "Pixelify Sans", sans-serif;
 }

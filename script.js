@@ -1,1 +1,2 @@
-const url = "https://tinkr.tech/sdb/poly/wander";
+const URL = "https://tinkr.tech/sdb/poly/wander";
+const playerimg= "player.png"
