@@ -1,0 +1,70 @@
+#pealkiri{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: midnightblue;
+    color: white;
+}
+#talk{
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:5px;
+    padding: 10px;
+}
+#name{
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:5px;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+    color: red;
+    font-family: "Pixelify Sans", sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+#world {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: #1a2a4a;
+    border: 2px solid white;
+    margin: 0 auto;
+    cursor: pointer;
+    overflow: hidden;
+    image-rendering: pixelated;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 1rem 0;
+    flex-direction: column;
+}
+.button{
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius:5px;
+    cursor: pointer;
+    color: red;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
