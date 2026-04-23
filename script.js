@@ -22,22 +22,15 @@ document.getElementById("join").addEventListener("click", async () => {
     localStorage.setItem("playerKey", playerKey);
     localStorage.setItem("myUsername", myUsername);
 });
+
 document.getElementById("say").addEventListener("click", async () => {
     const message = document.getElementById("talk").value.trim();
     if (!message || !playerKey) return;
  
-    await fetch(url, {
+    await fetch(URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ action: "talk", player_key: playerKey, message })
     });
     document.getElementById("talk").value = "";
 });
-
-document.getElementById("leave").addEventListener("click", () => {
-    localStorage.removeItem("playerKey");
-    localStorage.removeItem("myUsername");
-    playerKey = null;
-    myUsername = null;
-});
-

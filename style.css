@@ -25,7 +25,7 @@ body {
 }
 button{
     cursor: pointer;
-    color: red;
+    color: blue;
     font-family: "Pixelify Sans", sans-serif;
     border-radius: 5px;
     padding: 10px;
@@ -42,10 +42,9 @@ button{
     position: relative;
     width: 800px;
     height: 600px;
-    background: #1a2a4a;
+    background: steelblue;
     border: 2px solid white;
     margin: 0 auto;
-    cursor: pointer;
     overflow: hidden;
     image-rendering: pixelated;
 }
@@ -57,14 +56,5 @@ button{
     gap: 8px;
     margin: 1rem 0;
     flex-direction: column;
-}
-.button{
-    display:flex;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius:5px;
-    cursor: pointer;
-    color: red;
-    font-family: "Pixelify Sans", sans-serif;
 }
 
