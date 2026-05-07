@@ -1,13 +1,17 @@
-#pealkiri{
-    display:flex;
-    justify-content: center;
+#pealkiri {
     text-align: center;
     font-family: "Pixelify Sans", sans-serif;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    letter-spacing: 2px;
 }
+ 
 body {
     font-family: Arial, sans-serif;
     background-color: midnightblue;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 #talk{
     display:flex;
@@ -15,6 +19,7 @@ body {
     margin-left: auto;
     border-radius:5px;
     padding: 10px;
+    width: 280px;
 }
 #name{
     display:flex;
@@ -57,4 +62,42 @@ button{
     margin: 1rem 0;
     flex-direction: column;
 }
-
+.bubble {
+    background: white;
+    color: black;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    max-width: 120px;
+    text-align: center;
+    margin-bottom: 4px;
+    position: relative;
+    word-break: break-word;
+}
+.player {
+    position: absolute;
+    transform: translate(-16px, -16px); /* tsenter spraidil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.player img {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+}
+ 
+.label {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 11px;
+    color: #ccd;
+    margin-top: 2px;
+    white-space: nowrap;
+}
+ 
+.label.me {
+    color: #ffdd55;
+}
+ 
+ 
