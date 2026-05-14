@@ -2,7 +2,7 @@ const URL = "https://tinkr.tech/sdb/poly/wander";
 
 let playerKey = localStorage.getItem("playerKey");
 let myUsername = localStorage.getItem("myUsername");
-let pollInterval = null;
+let updateInterval = null;
 
 function showWorld() {
     document.getElementById("login").style.display = "none";
@@ -50,18 +50,18 @@ async function renderWorld() {
     }
 }
 
-function startPolling() {
+function startUpdating() {
     renderWorld();
-    pollInterval = setInterval(renderWorld, 1000);
+    updateInterval = setInterval(renderWorld, 1000);
 }
  
-function stopPolling() {
-    clearInterval(pollInterval);
+function stopUpdating() {
+    clearInterval(updateInterval);
 }
  
 if (playerKey) {
     showWorld();
-    startPolling();
+    startUpdating();
 }
  
 
@@ -83,7 +83,7 @@ document.getElementById("join").addEventListener("click", async () => {
     localStorage.setItem("myUsername", myUsername);
  
     showWorld();
-    startPolling();
+    startUpdating();
 });
 
 document.getElementById("say").addEventListener("click", async () => {
@@ -104,7 +104,7 @@ document.getElementById("leave").addEventListener("click", () => {
     playerKey = null;
     myUsername = null;
     hideWorld();
-    stopPolling();
+    stopUpdating();
 });
 
 document.getElementById("world").addEventListener("click", async (e) => {
